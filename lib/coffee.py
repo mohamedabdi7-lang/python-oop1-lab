@@ -8,15 +8,15 @@ class Coffee:
         return self._size
 
     @size.setter
-    def size(self, size):
-        if size in ["Small", "Medium", "Large"]:
-            self._size = size
+    def size(self, value):
+        if value in ["Small", "Medium", "Large"]:
+            self._size = value
         else:
             print("size must be Small, Medium, or Large")
 
     def tip(self):
-        print("This coffee is great, here’s a tip!")
         self.price += 1
+        print("This coffee is great, here’s a tip!")
 
 
 
